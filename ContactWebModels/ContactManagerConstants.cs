@@ -12,7 +12,7 @@
         public const int MAX_STREET_ADDRESS_LENGTH = 250;
         public const int MAX_CITY_LENGTH = 50;
         public const int MAX_ZIP_CODE_LENGTH = 10;
-        public const int MIN_ZIP_CODE_LENGTH = 10;
+        public const int MIN_ZIP_CODE_LENGTH = 5;
 
     }
 }

@@ -52,7 +52,7 @@ namespace ContactWebModels
         public virtual State State { get; set; }
 
         [Required(ErrorMessage = "Zip Code is required")]
-        [Display(Name = "State")]
+        [Display(Name = "Zip Code")]
         [StringLength(ContactManagerConstants.MAX_ZIP_CODE_LENGTH, MinimumLength = ContactManagerConstants.MIN_ZIP_CODE_LENGTH)]
         [RegularExpression("(^\\d{5}(-\\d{4})?$)|(^[ABCEGHJKLMNPRSTVXY]{1}\\d{1}[A-Z]{1} *\\d{1}[A-Z]{1}\\d{1}$)", ErrorMessage = "Zip code is invalid.")] // US or Canada
         public string Zip { get; set; }
