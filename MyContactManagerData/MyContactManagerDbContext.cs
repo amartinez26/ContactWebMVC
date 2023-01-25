@@ -22,12 +22,15 @@ namespace MyContactManagerData
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var builder = new ConfigurationBuilder()
-                             .SetBasePath(Directory.GetCurrentDirectory())
-                             .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
-            _configuration = builder.Build();
-            var connString = _configuration.GetConnectionString("MyContactManager");
-            optionsBuilder.UseSqlServer(connString);
+            if (!optionsBuilder.IsConfigured)
+            {
+                var builder = new ConfigurationBuilder()
+                                             .SetBasePath(Directory.GetCurrentDirectory())
+                                             .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+                _configuration = builder.Build();
+                var connString = _configuration.GetConnectionString("MyContactManager");
+                optionsBuilder.UseSqlServer(connString);
+            }          
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
