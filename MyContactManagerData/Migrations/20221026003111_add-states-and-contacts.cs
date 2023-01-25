@@ -36,7 +36,7 @@ namespace MyContactManagerData.Migrations
                     PhoneSecondary = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false),
                     Birthday = table.Column<DateTime>(type: "datetime2", nullable: false),
                     StreetAddress1 = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: false),
-                    StreeAddress2 = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: false),
+                    StreetAddress2 = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: false),
                     City = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     StateId = table.Column<int>(type: "int", nullable: false),
                     Zip = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),

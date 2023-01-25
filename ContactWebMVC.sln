@@ -9,9 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactWebModels", "Contact
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyContactManagerData", "MyContactManagerData\MyContactManagerData.csproj", "{BBCE66D8-24B4-46FE-A67A-2FB204C64333}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyContactManagerRepositories", "MyContactManagerRepositories\MyContactManagerRepositories.csproj", "{CDFE2391-DA13-4DEA-BD0D-A587CB8087C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyContactManagerRepositories", "MyContactManagerRepositories\MyContactManagerRepositories.csproj", "{CDFE2391-DA13-4DEA-BD0D-A587CB8087C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyContactManagerServices", "MyContactManagerServices\MyContactManagerServices.csproj", "{514F195C-BA2F-4730-AD03-3C6C86189ABF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyContactManagerServices", "MyContactManagerServices\MyContactManagerServices.csproj", "{514F195C-BA2F-4730-AD03-3C6C86189ABF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyContactManagerUnitTests", "MyContactManagerUnitTests\MyContactManagerUnitTests.csproj", "{90395F1C-E2C6-4950-BF94-14EF3FE4424F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyContactManagerIntegrationTests", "MyContactManagerIntegrationTests\MyContactManagerIntegrationTests.csproj", "{528C5013-72AE-44BF-93CC-E3AA0F6EBE16}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{514F195C-BA2F-4730-AD03-3C6C86189ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{514F195C-BA2F-4730-AD03-3C6C86189ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{514F195C-BA2F-4730-AD03-3C6C86189ABF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90395F1C-E2C6-4950-BF94-14EF3FE4424F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90395F1C-E2C6-4950-BF94-14EF3FE4424F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90395F1C-E2C6-4950-BF94-14EF3FE4424F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90395F1C-E2C6-4950-BF94-14EF3FE4424F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{528C5013-72AE-44BF-93CC-E3AA0F6EBE16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{528C5013-72AE-44BF-93CC-E3AA0F6EBE16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{528C5013-72AE-44BF-93CC-E3AA0F6EBE16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{528C5013-72AE-44BF-93CC-E3AA0F6EBE16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

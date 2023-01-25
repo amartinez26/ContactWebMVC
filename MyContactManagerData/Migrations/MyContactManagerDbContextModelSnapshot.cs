@@ -66,7 +66,7 @@ namespace MyContactManagerData.Migrations
                     b.Property<int>("StateId")
                         .HasColumnType("int");
 
-                    b.Property<string>("StreeAddress2")
+                    b.Property<string>("StreetAddress2")
                         .IsRequired()
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");

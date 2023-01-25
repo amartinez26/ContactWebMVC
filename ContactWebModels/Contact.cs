@@ -40,7 +40,7 @@ namespace ContactWebModels
 
         [Display(Name = "Street Address Line 2")]
         [StringLength(ContactManagerConstants.MAX_STREET_ADDRESS_LENGTH)]
-        public string StreeAddress2 { get; set; }
+        public string StreetAddress2 { get; set; }
 
         [Required(ErrorMessage = "City is required")]
         [StringLength(ContactManagerConstants.MAX_CITY_LENGTH)]
@@ -65,9 +65,9 @@ namespace ContactWebModels
 
         [Display(Name = "Full Address")]
         public string FriendlyAddress => State is null ? "" : string.IsNullOrWhiteSpace(StreetAddress1) ? $"{City}, {State.Abbreviation}, {Zip}" :
-                                               string.IsNullOrWhiteSpace(StreeAddress2)
+                                               string.IsNullOrWhiteSpace(StreetAddress2)
                                                ? $"{StreetAddress1}, {City}, {State.Abbreviation}, {Zip}"
-                                               : $"{StreetAddress1} - {StreeAddress2}, {City}, {State.Abbreviation}, {Zip}";
+                                               : $"{StreetAddress1} - {StreetAddress2}, {City}, {State.Abbreviation}, {Zip}";
 
 
 
